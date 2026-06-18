@@ -291,6 +291,9 @@ Used for communication with the Ollama API.
 | GET    | /anomalies | Generate anomaly report          |
 
 ---
+# UI Layer:
+
+* Streamlit provides a simple web interface for interacting with the FastAPI backend. Users can     submit natural language questions and view anomaly reports without using Swagger or Postman.
 
 # Example Queries
 

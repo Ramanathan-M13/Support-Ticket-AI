@@ -68,6 +68,16 @@ Columns:
             13. When counting unresolved tickets, use:
                 status IN ('Open','Escalated')
             14. Ignore NULL customer ratings when calculating averages.
+            
+        IMPORTANT BUSINESS RULES:
+
+        - This dataset contains historical ticket data.
+        - Never use date('now').
+        - Never use current system date.
+        - For questions containing "this month", use the latest month available in the dataset.
+        - Unresolved tickets = status IN ('Open','Escalated')
+        - Resolved tickets = status='Resolved'
+        - Ignore NULL customer_rating values when calculating averages.
 
         USER Question:
             {question}
